@@ -1,0 +1,14 @@
+[package]
+name = "ssh_chat"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.86"
+async-trait = "0.1.80"
+futures = "0.3.30"
+russh = "0.43.0"
+russh-keys = "0.43.0"
+tokio = "1.38.0"
+ratatui = { version = "0.26.3", features = ["unstable-rendered-line-info"] }
+strip-ansi-escapes = "0.2.0"
