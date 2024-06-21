@@ -280,9 +280,6 @@ impl Handler for AppServer {
 
 #[tokio::main]
 async fn main() {
-    env_logger::builder()
-        .filter_level(log::LevelFilter::Trace)
-        .init();
     let mut server = AppServer::new();
     server.run().await.expect("Failed running server");
 }
